@@ -6,3 +6,6 @@ From: nselem/corason:latest
 
 %post
 	mv /root/corason /opt
+
+%runscript
+	exec /opt/corason/CORASON/corason.pl "$@"
